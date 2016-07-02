@@ -7,9 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65100BFC1D27EDDE00610340 /* Director.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65100BFB1D27EDDE00610340 /* Director.swift */; };
+		65100BFD1D27EDDE00610340 /* Director.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65100BFB1D27EDDE00610340 /* Director.swift */; };
+		65100BFE1D27EDDE00610340 /* Director.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65100BFB1D27EDDE00610340 /* Director.swift */; };
+		65100C011D27F3DA00610340 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65100C001D27F3DA00610340 /* RootViewController.swift */; };
+		65100C021D27F3DA00610340 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65100C001D27F3DA00610340 /* RootViewController.swift */; };
+		65100C031D27F3DA00610340 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65100C001D27F3DA00610340 /* RootViewController.swift */; };
+		65100C061D27FB0200610340 /* ChallengeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65100C051D27FB0200610340 /* ChallengeController.swift */; };
+		65100C071D27FB0200610340 /* ChallengeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65100C051D27FB0200610340 /* ChallengeController.swift */; };
+		65100C081D27FB0200610340 /* ChallengeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65100C051D27FB0200610340 /* ChallengeController.swift */; };
+		65100C0B1D27FE2E00610340 /* OwnController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65100C0A1D27FE2E00610340 /* OwnController.swift */; };
+		65100C0C1D27FE2E00610340 /* OwnController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65100C0A1D27FE2E00610340 /* OwnController.swift */; };
+		65100C0D1D27FE2E00610340 /* OwnController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65100C0A1D27FE2E00610340 /* OwnController.swift */; };
 		6592F4EB1D0F80140096412A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6592F4EA1D0F80140096412A /* AppDelegate.swift */; };
-		6592F4ED1D0F80140096412A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6592F4EC1D0F80140096412A /* ViewController.swift */; };
-		6592F4F01D0F80140096412A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6592F4EE1D0F80140096412A /* Main.storyboard */; };
 		6592F4F21D0F80140096412A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6592F4F11D0F80140096412A /* Assets.xcassets */; };
 		6592F4F51D0F80140096412A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6592F4F31D0F80140096412A /* LaunchScreen.storyboard */; };
 		6592F5001D0F80140096412A /* TheOneFoosball2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6592F4FF1D0F80140096412A /* TheOneFoosball2Tests.swift */; };
@@ -37,10 +47,12 @@
 /* Begin PBXFileReference section */
 		1DEEBE81292E9668F6CE402E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BE5DCDC642AC397363705AB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		65100BFB1D27EDDE00610340 /* Director.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Director.swift; path = src/Director.swift; sourceTree = "<group>"; };
+		65100C001D27F3DA00610340 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootViewController.swift; path = src/ui/RootViewController.swift; sourceTree = "<group>"; };
+		65100C051D27FB0200610340 /* ChallengeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChallengeController.swift; path = src/ui/challenge/ChallengeController.swift; sourceTree = "<group>"; };
+		65100C0A1D27FE2E00610340 /* OwnController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OwnController.swift; path = src/ui/own/OwnController.swift; sourceTree = "<group>"; };
 		6592F4E71D0F80140096412A /* TheOneFoosball2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheOneFoosball2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6592F4EA1D0F80140096412A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6592F4EC1D0F80140096412A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6592F4EF1D0F80140096412A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6592F4F11D0F80140096412A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6592F4F41D0F80140096412A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6592F4F61D0F80140096412A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -96,6 +108,41 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		65100BFA1D27ED6400610340 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				65100BFF1D27F3A300610340 /* ui */,
+				65100C001D27F3DA00610340 /* RootViewController.swift */,
+				65100BFB1D27EDDE00610340 /* Director.swift */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		65100BFF1D27F3A300610340 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				65100C041D27FA9500610340 /* challenge */,
+				65100C091D27FDCA00610340 /* own */,
+			);
+			name = ui;
+			sourceTree = "<group>";
+		};
+		65100C041D27FA9500610340 /* challenge */ = {
+			isa = PBXGroup;
+			children = (
+				65100C051D27FB0200610340 /* ChallengeController.swift */,
+			);
+			name = challenge;
+			sourceTree = "<group>";
+		};
+		65100C091D27FDCA00610340 /* own */ = {
+			isa = PBXGroup;
+			children = (
+				65100C0A1D27FE2E00610340 /* OwnController.swift */,
+			);
+			name = own;
+			sourceTree = "<group>";
+		};
 		6592F4DE1D0F80130096412A = {
 			isa = PBXGroup;
 			children = (
@@ -121,9 +168,8 @@
 		6592F4E91D0F80140096412A /* TheOneFoosball2 */ = {
 			isa = PBXGroup;
 			children = (
+				65100BFA1D27ED6400610340 /* src */,
 				6592F4EA1D0F80140096412A /* AppDelegate.swift */,
-				6592F4EC1D0F80140096412A /* ViewController.swift */,
-				6592F4EE1D0F80140096412A /* Main.storyboard */,
 				6592F4F11D0F80140096412A /* Assets.xcassets */,
 				6592F4F31D0F80140096412A /* LaunchScreen.storyboard */,
 				6592F4F61D0F80140096412A /* Info.plist */,
@@ -258,7 +304,6 @@
 			files = (
 				6592F4F51D0F80140096412A /* LaunchScreen.storyboard in Resources */,
 				6592F4F21D0F80140096412A /* Assets.xcassets in Resources */,
-				6592F4F01D0F80140096412A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,8 +376,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6592F4ED1D0F80140096412A /* ViewController.swift in Sources */,
 				6592F4EB1D0F80140096412A /* AppDelegate.swift in Sources */,
+				65100BFC1D27EDDE00610340 /* Director.swift in Sources */,
+				65100C011D27F3DA00610340 /* RootViewController.swift in Sources */,
+				65100C061D27FB0200610340 /* ChallengeController.swift in Sources */,
+				65100C0B1D27FE2E00610340 /* OwnController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +389,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6592F5001D0F80140096412A /* TheOneFoosball2Tests.swift in Sources */,
+				65100BFD1D27EDDE00610340 /* Director.swift in Sources */,
+				65100C021D27F3DA00610340 /* RootViewController.swift in Sources */,
+				65100C071D27FB0200610340 /* ChallengeController.swift in Sources */,
+				65100C0C1D27FE2E00610340 /* OwnController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +401,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6592F50B1D0F80140096412A /* TheOneFoosball2UITests.swift in Sources */,
+				65100BFE1D27EDDE00610340 /* Director.swift in Sources */,
+				65100C031D27F3DA00610340 /* RootViewController.swift in Sources */,
+				65100C081D27FB0200610340 /* ChallengeController.swift in Sources */,
+				65100C0D1D27FE2E00610340 /* OwnController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,14 +424,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6592F4EE1D0F80140096412A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6592F4EF1D0F80140096412A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6592F4F31D0F80140096412A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
