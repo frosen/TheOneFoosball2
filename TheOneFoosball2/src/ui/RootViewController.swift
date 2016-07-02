@@ -33,15 +33,6 @@ class RootViewController: UITabBarController {
 
         // 设置子控制器的图片
         vc.tabBarItem.image = UIImage(named: img)
-//        vc.tabBarItem.selectedImage = UIImage(named: simg)!.imageWithRenderingMode(.AlwaysOriginal)
-
-        // 设置文字的样式
-//        vc.tabBarItem.setTitleTextAttributes([
-//                NSForegroundColorAttributeName: UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 1.0)
-//            ], forState: .Normal)
-//        vc.tabBarItem.setTitleTextAttributes([
-//                NSForegroundColorAttributeName: UIColor(red: 0.68, green: 0.4, blue: 0.08, alpha: 1.0)
-//            ], forState: .Selected)
 
         // 先给外面传进来的小控制器 包装 一个导航控制器
         let nav = UINavigationController(rootViewController: vc)
