@@ -8,6 +8,9 @@
 
 import UIKit
 
-class OwnController: UITableViewController {
-
+class OwnController: BaseTableController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        print("个人页面")
+    }
 }

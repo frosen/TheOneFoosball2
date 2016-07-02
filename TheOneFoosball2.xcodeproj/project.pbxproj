@@ -19,6 +19,9 @@
 		65100C0B1D27FE2E00610340 /* OwnController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65100C0A1D27FE2E00610340 /* OwnController.swift */; };
 		65100C0C1D27FE2E00610340 /* OwnController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65100C0A1D27FE2E00610340 /* OwnController.swift */; };
 		65100C0D1D27FE2E00610340 /* OwnController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65100C0A1D27FE2E00610340 /* OwnController.swift */; };
+		65100C101D2807A900610340 /* BaseTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65100C0F1D2807A900610340 /* BaseTableController.swift */; };
+		65100C111D2807A900610340 /* BaseTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65100C0F1D2807A900610340 /* BaseTableController.swift */; };
+		65100C121D2807A900610340 /* BaseTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65100C0F1D2807A900610340 /* BaseTableController.swift */; };
 		6592F4EB1D0F80140096412A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6592F4EA1D0F80140096412A /* AppDelegate.swift */; };
 		6592F4F21D0F80140096412A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6592F4F11D0F80140096412A /* Assets.xcassets */; };
 		6592F4F51D0F80140096412A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6592F4F31D0F80140096412A /* LaunchScreen.storyboard */; };
@@ -51,6 +54,7 @@
 		65100C001D27F3DA00610340 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootViewController.swift; path = src/ui/RootViewController.swift; sourceTree = "<group>"; };
 		65100C051D27FB0200610340 /* ChallengeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChallengeController.swift; path = src/ui/challenge/ChallengeController.swift; sourceTree = "<group>"; };
 		65100C0A1D27FE2E00610340 /* OwnController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OwnController.swift; path = src/ui/own/OwnController.swift; sourceTree = "<group>"; };
+		65100C0F1D2807A900610340 /* BaseTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseTableController.swift; path = src/ui/base/BaseTableController.swift; sourceTree = "<group>"; };
 		6592F4E71D0F80140096412A /* TheOneFoosball2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheOneFoosball2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6592F4EA1D0F80140096412A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6592F4F11D0F80140096412A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -121,6 +125,7 @@
 		65100BFF1D27F3A300610340 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				65100C0E1D28077000610340 /* base */,
 				65100C041D27FA9500610340 /* challenge */,
 				65100C091D27FDCA00610340 /* own */,
 			);
@@ -141,6 +146,14 @@
 				65100C0A1D27FE2E00610340 /* OwnController.swift */,
 			);
 			name = own;
+			sourceTree = "<group>";
+		};
+		65100C0E1D28077000610340 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				65100C0F1D2807A900610340 /* BaseTableController.swift */,
+			);
+			name = base;
 			sourceTree = "<group>";
 		};
 		6592F4DE1D0F80130096412A = {
@@ -377,6 +390,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6592F4EB1D0F80140096412A /* AppDelegate.swift in Sources */,
+				65100C101D2807A900610340 /* BaseTableController.swift in Sources */,
 				65100BFC1D27EDDE00610340 /* Director.swift in Sources */,
 				65100C011D27F3DA00610340 /* RootViewController.swift in Sources */,
 				65100C061D27FB0200610340 /* ChallengeController.swift in Sources */,
@@ -389,6 +403,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6592F5001D0F80140096412A /* TheOneFoosball2Tests.swift in Sources */,
+				65100C111D2807A900610340 /* BaseTableController.swift in Sources */,
 				65100BFD1D27EDDE00610340 /* Director.swift in Sources */,
 				65100C021D27F3DA00610340 /* RootViewController.swift in Sources */,
 				65100C071D27FB0200610340 /* ChallengeController.swift in Sources */,
@@ -401,6 +416,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6592F50B1D0F80140096412A /* TheOneFoosball2UITests.swift in Sources */,
+				65100C121D2807A900610340 /* BaseTableController.swift in Sources */,
 				65100BFE1D27EDDE00610340 /* Director.swift in Sources */,
 				65100C031D27F3DA00610340 /* RootViewController.swift in Sources */,
 				65100C081D27FB0200610340 /* ChallengeController.swift in Sources */,

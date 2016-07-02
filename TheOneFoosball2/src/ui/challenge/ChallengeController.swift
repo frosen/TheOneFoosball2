@@ -8,8 +8,9 @@
 
 import UIKit
 
-class ChallengeController: UITableViewController {
+class ChallengeController: BaseTableController {
     override func viewDidLoad() {
+        super.viewDidLoad()
         print("挑战页面")
     }
 }

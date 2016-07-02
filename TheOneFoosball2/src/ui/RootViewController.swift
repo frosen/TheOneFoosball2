@@ -10,8 +10,23 @@ import UIKit
 
 class RootViewController: UITabBarController {
     override func viewDidLoad() {
+        initUI()
+        initSubVc()
+    }
+
+    func initUI() {
         tabBar.tintColor = UIColor.redColor()
 
+        let navBar = UINavigationBar.appearance()
+        navBar.barTintColor = UIColor.redColor()
+
+        navBar.layer.shadowColor = UIColor.blackColor().CGColor
+        navBar.layer.shadowOffset = CGSize(width: 10, height: 20)
+        navBar.layer.shadowOpacity = 0.25
+        navBar.layer.shadowRadius = 40
+    }
+
+    func initSubVc() {
         //挑战
         let challengeVc = ChallengeController(style: .Grouped)
         addVc(challengeVc, title: "挑战", image: "home2", selectedImage: "home")
@@ -25,7 +40,6 @@ class RootViewController: UITabBarController {
         //个人
         let ownVc = OwnController()
         addVc(ownVc, title: "个人", image: "my2", selectedImage: "my")
-        
     }
 
     func addVc(vc: UIViewController, title t: String, image img: String, selectedImage simg: String) {
@@ -39,6 +53,5 @@ class RootViewController: UITabBarController {
 
         // 添加为子控制器
         addChildViewController(nav)
-
     }
 }
