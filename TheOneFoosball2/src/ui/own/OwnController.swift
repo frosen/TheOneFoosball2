@@ -32,10 +32,19 @@ class OwnController: BaseTableController {
         ],
     ]
 
+    init() {
+        super.init(style: .Grouped)
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         print("个人页面")
 
+        
         navigationController!.navigationBarHidden = true
         automaticallyAdjustsScrollViewInsets = false
     }
@@ -68,25 +77,33 @@ class OwnController: BaseTableController {
 
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         if (indexPath.section == 0) {
-            return 70
+            return OwnTitleCell.getCellHeight()
         } else if (indexPath.section == 1) {
-            return 80
+            return OwnQRCell.getCellHeight()
         } else {
-            return 44
+            return OwnNormalCell.getCellHeight()
         }
     }
 
+    let ownTitleCellId = "OTCId"
     let ownNorCellId = "ONCId"
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         if (indexPath.section == 0) {
-            return nil
+            var cell = tableView.dequeueReusableCellWithIdentifier(ownTitleCellId)
+            if (cell == nil) {
+                cell = OwnTitleCell(style: .Default, reuseIdentifier: ownTitleCellId)
+            }
+            return cell!
         } else if (indexPath.section == 1) {
-            return nil
+            var cell = tableView.dequeueReusableCellWithIdentifier(ownTitleCellId)
+            if (cell == nil) {
+                cell = OwnQRCell(style: .Default, reuseIdentifier: ownTitleCellId)
+            }
+            return cell!
         } else {
-
             var cell = tableView.dequeueReusableCellWithIdentifier(ownNorCellId)
             if (cell == nil) {
-                cell = UITableViewCell(style: .Value1, reuseIdentifier: ownNorCellId)
+                cell = OwnNormalCell(style: .Value1, reuseIdentifier: ownNorCellId)
 
                 let data: NorCellData = group[indexPath.section - 2][indexPath.row]
                 cell!.imageView!.image = UIImage(named: data.img)
@@ -95,12 +112,16 @@ class OwnController: BaseTableController {
                 cell!.accessoryType = .DisclosureIndicator
             }
             return cell!
-
         }
     }
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     }
+
+    //scroll view
+//    override func scrollViewDidScroll(scrollView: UIScrollView) {
+//        print(scrollView.contentOffset.y)
+//    }
 }
 
 
