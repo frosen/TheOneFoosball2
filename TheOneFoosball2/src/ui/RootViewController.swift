@@ -19,17 +19,12 @@ class RootViewController: UITabBarController {
 
         let navBar = UINavigationBar.appearance()
         navBar.barTintColor = UIColor.redColor()
-
-        navBar.layer.shadowColor = UIColor.blackColor().CGColor
-        navBar.layer.shadowOffset = CGSize(width: 10, height: 20)
-        navBar.layer.shadowOpacity = 0.25
-        navBar.layer.shadowRadius = 40
     }
 
     func initSubVc() {
         //挑战
-        let challengeVc = ChallengeController(style: .Grouped)
-        addVc(challengeVc, title: "挑战", image: "home2", selectedImage: "home")
+        let challengeVc = ChallengeController()
+        addVc(challengeVc, title: "挑战", image: "home2")
 
         //附近
 
@@ -39,10 +34,10 @@ class RootViewController: UITabBarController {
 
         //个人
         let ownVc = OwnController()
-        addVc(ownVc, title: "个人", image: "my2", selectedImage: "my")
+        addVc(ownVc, title: "个人", image: "my2")
     }
 
-    func addVc(vc: UIViewController, title t: String, image img: String, selectedImage simg: String) {
+    func addVc(vc: UIViewController, title t: String, image img: String) {
         vc.tabBarItem.title = t
 
         // 设置子控制器的图片

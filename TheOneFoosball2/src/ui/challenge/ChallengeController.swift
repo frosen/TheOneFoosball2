@@ -13,4 +13,8 @@ class ChallengeController: BaseTableController {
         super.viewDidLoad()
         print("挑战页面")
     }
+
+    override func viewWillAppear(animated: Bool) {
+        
+    }
 }
