@@ -1,13 +1,13 @@
 PODS:
   - AVOSCloud (3.2.6)
-  - Masonry (0.6.4)
+  - SnapKit (0.19.1)
 
 DEPENDENCIES:
   - AVOSCloud
-  - Masonry
+  - SnapKit
 
 SPEC CHECKSUMS:
   AVOSCloud: 08ba88573fca8559dfc658942b391c4568fabfc0
-  Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+  SnapKit: eff58d6e3451bf2f482db2eccf86aecf371dc62d
 
 COCOAPODS: 0.39.0

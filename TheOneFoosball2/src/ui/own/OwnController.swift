@@ -49,8 +49,7 @@ class OwnController: BaseTableController {
         automaticallyAdjustsScrollViewInsets = false
 
         //设置tableview的基本属性，分割线等
-        tableView.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-
+        tableView.separatorInset = UIEdgeInsetsZero
     }
 
     //table view
