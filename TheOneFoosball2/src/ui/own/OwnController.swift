@@ -24,11 +24,11 @@ class OwnController: BaseTableController {
     let group = [
         //section
         [
-            NorCellData(i: "", t: "", st: ""),
-            NorCellData(i: "", t: "", st: ""),
+            NorCellData(i: "share", t: "分享", st: "分享"),
+            NorCellData(i: "feedback", t: "反馈", st: ""),
         ],
         [
-            NorCellData(i: "", t: "", st: ""),
+            NorCellData(i: "setting", t: "设置", st: ""),
         ],
     ]
 
@@ -44,9 +44,13 @@ class OwnController: BaseTableController {
         super.viewDidLoad()
         print("个人页面")
 
-        
+        //隐藏导航栏，并让tableview位置忽略导航栏
         navigationController!.navigationBarHidden = true
         automaticallyAdjustsScrollViewInsets = false
+
+        //设置tableview的基本属性，分割线等
+        tableView.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+
     }
 
     //table view

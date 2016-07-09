@@ -13,11 +13,12 @@ class OwnTitleCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
 
         let h = Int(OwnTitleCell.getCellHeight())
-        contentView.bounds = CGRect(x: 0, y: 0, width: Int(contentView.frame.width), height: h)
 
         let bg = UIImageView(image: UIImage(named: "selfbg"))
-        bg.frame = CGRect(x: 0, y: 0, width: Int(contentView.frame.width), height: h)
+        bg.frame = CGRect(x: 0, y: 0, width: Int(UIScreen.mainScreen().bounds.width), height: h)
         contentView.addSubview(bg)
+
+        //头像
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -25,7 +26,7 @@ class OwnTitleCell: UITableViewCell {
     }
 
     class func getCellHeight() -> CGFloat {
-        return 140
+        return 200
     }
 }
 

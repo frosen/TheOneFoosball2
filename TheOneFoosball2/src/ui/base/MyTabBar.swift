@@ -76,7 +76,7 @@ class MyTabBar: UIView {
             }
             x = CGFloat(i) * w
             view.frame = CGRect(x: x, y: y, width: w, height: h)
-            ++i
+            i += 1
         }
     }
 

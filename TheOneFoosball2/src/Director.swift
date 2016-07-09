@@ -15,5 +15,10 @@ class Director: NSObject {
         print("初始化导演类")
     }
 
+    //在所有之前调用
+    func onStart() {
+        //读取配置文件
+    }
+
     
 }
