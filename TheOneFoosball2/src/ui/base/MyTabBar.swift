@@ -47,7 +47,7 @@ class MyTabBar: UIView {
             let btn = UIButton(type: .Custom)
 
             btn.tag = buttons.count
-            btn.addTarget(self, action: "onClickBtn:", forControlEvents: .TouchDown)
+            btn.addTarget(self, action: #selector(MyTabBar.onClickBtn(_:)), forControlEvents: .TouchDown)
 
             addSubview(btn)
             buttons.append(btn)
@@ -84,7 +84,7 @@ class MyTabBar: UIView {
 
     }
 
-    func onClickMidBtn() {
+    func onClickMidBtn(btn: UIButton) {
 
     }
 }

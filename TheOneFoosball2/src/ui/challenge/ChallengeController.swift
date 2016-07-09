@@ -9,6 +9,8 @@
 import UIKit
 
 class ChallengeController: BaseTableController {
+    var dataPage: Int = 1
+
     init() {
         super.init(style: .Grouped)
     }
@@ -20,6 +22,8 @@ class ChallengeController: BaseTableController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("挑战页面")
+
+        initNavBar()
     }
 
     override func viewWillAppear(animated: Bool) {
