@@ -15,7 +15,7 @@ class BaseTableController: UITableViewController {
         //左
 
         //右
-        navigationItem.rightBarButtonItem = createBarBtnItem(#selector(BaseTableController.onClickSearch(_:)), image: "search")
+        navigationItem.rightBarButtonItem = createBarBtnItem("onClickSearch:", image: "search")
     }
 
     func createBarBtnItem(action: Selector, image img: String) -> UIBarButtonItem {
